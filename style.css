@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+header {
+    height: 30px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    height: 100px;
+    background-color: blue;
+}
