@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Gaynullin LR-1
+        </title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Food construct</h1>
+        <header>
+            <a href="#about_us">О нас</a>
+            <a href="">Сообрать ланч</a>
+            <a href="">Заказы</a>
+            <a href="#footer">Контакты</a>
+        </header>
+        <main>
+            <img src="img\XXL_height.webp" alt="Фото кота">
+            <div id="Table">
+                <dev id="about_us">
+                    <h2>О нас</h2>
+                    <p>Food construct - доставка бизнес-ланчей по Москве. Мы привезем вам горячую вкусную еду в любую точку к назначенному времени.</p>
+                    <h2>Преимущества Food construct</h2>
+                    <ol>
+                        <li>Привозим еду к назначенному времени без опозданий.</li>
+                        <li>Надежно упаковываем блюда в удобные контейнеры бесплатно.</li>
+                        <li>Доставляем весь день с 7:00 до 23:00.</li>
+                    </ol>
+                </dev>
+                <h2>Топ 4 популярных блюд</h2>
+                <table>
+                    <tr>
+                        <th>№</th>
+                        <th>Название</th>
+                        <th>Кол-во заказов в неделю</th>
+                        <th>Цена</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Лазанья</td>
+                        <td>200</td>
+                        <td>450</td>
+                    </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>Том Ям с креветками</td>
+                        <td>345</td>
+                        <td>290</td>
+                    </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>Норвежсикй суп</td>
+                        <td>144</td>
+                        <td>270</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Жаренная картошка с грибами</td>
+                        <td>132</td>
+                        <td>300</td>
+                    </tr>
+                </table>
+            </div>
+
+            <form action="https://httpbin.org/" method="post">
+                <label for="names">ФИО</label>
+                <input type="text" name="names">
+
+                <label for="email">Email</label>
+                <input type="email" name="email">
+
+                <label for="source">Откуда вы узнали о нас</label>
+                <select name="source" id="">
+                    <option value="friends">От друзей</option>
+                    <option value="internet_adds">Из рекламы в интернете</option>
+                    <option value="accident">Увидели на улице</option>
+                </select>
+
+                <label for="type">Тип обращения</label>
+                <select name="type">
+                    <option value="complaint">Жалоба</option>
+                    <option value="offer">Предложение</option>
+                </select>
+
+                <textarea name="contents" placeholder="текст обращения"></textarea>
+
+                <label for="file">Файлы</label>
+                <input type="file" name="file">
+
+                <div>
+                    <input type="checkbox" name="PD_agreement">
+                    <label for="PD_agreement">Даю согласие на обработку персональных данных</label>
+                </div>
+            </form>
+        </main>
+        <footer id="footer">
+            &copy Гайнуллин Никита Эдуардович
+        </footer>
+    </body>
+</html>
