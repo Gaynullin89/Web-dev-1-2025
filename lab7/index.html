@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gaynullin LR-4 — Меню</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Food construct</h1>
+    <header>
+        <a href="#about_us">О нас</a>
+        <a href="">Сообрать ланч</a>
+        <a href="">Заказы</a>
+        <a href="#footer">Контакты</a>
+    </header>
+
+    <main>
+        <section id="lunch_options">
+            <h2>Доступные варианты ланча</h2>
+            <div class="lunch_grid">
+                <div class="lunch_variant">
+                    <h3>Мясной ланч</h3>
+                    <div class="dish_block">
+                        <img src="img/i (1).webp" alt="Томатный суп">
+                        <p>Томатный суп</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/i (4).webp" alt="Плов">
+                        <p>Плов</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/i (4).webp" alt="Карпаччо из говядины">
+                        <p>Карпаччо из говядины</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/15517b7ec5f50d84530dc26e023e0b5e.jpg" alt="Чай">
+                        <p>Чай</p>
+                    </div>
+                    <p class="dessert_info">Десерт можно добавить дополнительно</p>
+                </div>
+                <div class="lunch_variant">
+                    <h3>Рыбный ланч</h3>
+                    <div class="dish_block">
+                        <img src="img/i (3).webp" alt="Том ям">
+                        <p>Том ям</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/i (2).webp" alt="Стейк лосося">
+                        <p>Стейк лосося</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/i (3).webp" alt="Салат с тунцом">
+                        <p>Салат с тунцом</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/15517b7ec5f50d84530dc26e023e0b5e.jpg" alt="Лимонад">
+                        <p>Лимонад</p>
+                    </div>
+                    <p class="dessert_info">Десерт можно добавить дополнительно</p>
+                </div>
+                <div class="lunch_variant">
+                    <h3>Вегетарианский ланч</h3>
+                    <div class="dish_block">
+                        <img src="img/i (7).webp" alt="Гаспачо">
+                        <p>Гаспачо</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/i (7).webp" alt="Запеканка из овощей и киноа">
+                        <p>Запеканка из овощей и киноа</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/i (1).webp" alt="Греческий салат">
+                        <p>Греческий салат</p>
+                    </div>
+                    <div class="dish_block">
+                        <img src="img/close-up-orange-juice-glass-table_1048944-16132466.jpg" alt="Свежевыжатый апельсиновый">
+                        <p>Свежевыжатый апельсиновый</p>
+                    </div>
+                    <p class="dessert_info">Десерт можно добавить дополнительно</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="dishes_container"><!-- скрипт заполнит содержимое --></div>
+
+        <section id="booking_form">
+            <form action="https://httpbin.org/post" method="post">
+                <div class="left-side">
+                    <h3>Ваш заказ</h3>
+                    <!-- скрипт добавит селекты -->
+                </div>
+
+                <div class="right-side">
+                    <h3>Ваши данные</h3>
+
+                    <div class="input-item">
+                        <label for="username">Имя</label>
+                        <input type="text" name="username">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="mail">Эл. почта</label>
+                        <input type="email" name="mail">
+                    </div>
+
+                    <div class="input-item-row">
+                        <input type="checkbox" name="I_want_spam" id="I_want_spam">
+                        <label for="I_want_spam">Получать рассылки об акциях по почте</label>
+                    </div>
+
+                    <div class="input-item">
+                        <label for="telephone">Номер телефона</label>
+                        <input type="tel" name="telephone">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="address">Адрес доставки</label>
+                        <input type="text" name="address">
+                        <p>Доставка осуществляется только по Москве</p>
+                    </div>
+
+                    <div class="input-item">
+                        <div>
+                            <input type="radio" name="soonness" value="later" id="later">
+                            <label for="later">Могу подождать</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="soonness" value="sooner" id="sooner">
+                            <label for="sooner">Как можно скорее</label>
+                        </div>
+                    </div>
+
+                    <div class="input-item">
+                        <label for="delivery-time">Время доставки</label>
+                        <input type="time" name="delivery-time" min="07:00" max="23:00">
+                        <p>Время доступно только от 07:00 до 23:00</p>
+                    </div>
+
+                    <div class="input-item-row">
+                        <button type="submit">Отправить</button>
+                        <button type="reset">Сбросить</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        &copy; Гайнуллин Никита Эдуардович
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
