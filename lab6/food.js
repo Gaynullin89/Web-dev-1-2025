@@ -1,0 +1,178 @@
+const dishes = [
+  // --- СУПЫ ---
+  {
+    keyword: "tomat soup",
+    name: "Томатный суп",
+    category: "Суп",
+    price: 300,
+    image: "./img/soup/13.webp",
+  },
+  {
+    keyword: "ramen",
+    name: "Рамен",
+    category: "Суп",
+    price: 350,
+    image: "./img/soup/14.webp",
+  },
+  {
+    keyword: "tom yam",
+    name: "Том Ям",
+    category: "Суп",
+    price: 400,
+    image: "./img/soup/15.webp",
+  },
+  {
+    keyword: "mushroom soup",
+    name: "Грибной суп",
+    category: "Суп",
+    price: 450,
+    image: "./img/soup/27.webp",
+  },
+  {
+    keyword: "beet soup",
+    name: "Свекольный суп",
+    category: "Суп",
+    price: 300,
+    image: "./img/soup/21.webp",
+  },
+  {
+    keyword: "Gaspacho",
+    name: "Гаспачо",
+    category: "Суп",
+    price: 450,
+    image: "./img/soup/25.webp",
+  },
+
+  // --- ГЛАВНЫЕ ---
+  {
+    keyword: "salmon steak",
+    name: "Стейк лосося",
+    category: "Главное",
+    price: 650,
+    image: "./img/main/12.webp",
+  },
+  {
+    keyword: "plov",
+    name: "Плов",
+    category: "Главное",
+    price: 500,
+    image: "./img/main/16.webp",
+  },
+
+  {
+    keyword: "pasta a la navy",
+    name: "Макароны по флотски",
+    category: "Главное",
+    price: 400,
+    image: "./img/main/17.webp",
+  },
+  {
+    keyword: "mashed potatoes with cutlet",
+    name: "Пюре с котлетой",
+    category: "Главное",
+    price: 400,
+    image: "./img/main/30.webp",
+  },
+  {
+    keyword: "vegetable casserole",
+    name: "Запеканка из овощей",
+    category: "Главное",
+    price: 350,
+    image: "./img/main/28.webp",
+  },
+  {
+    keyword: "vegetable stew",
+    name: "Овощное рагу",
+    category: "Главное",
+    price: 350,
+    image: "./img/main/26.webp",
+  },
+
+  // --- САЛАТЫ ---
+  {
+    keyword: "bruschetta",
+    name: "Брускетта",
+    category: "Салат",
+    price: 200,
+    image: "./img/salad/23.webp",
+  },
+  {
+    keyword: "salad-greek",
+    name: "Греческий салат",
+    category: "Салат",
+    price: 200,
+    image: "./img/salad/29.webp",
+  },
+  {
+    keyword: "vegetable salad",
+    name: "Овощной салат",
+    category: "Салат",
+    price: 150,
+    image: "./img/salad/22.webp",
+  },
+  {
+    keyword: "salad-fish",
+    name: "Салат с тунцом",
+    category: "Салат",
+    price: 180,
+    image: "./img/salad/24.webp",
+  },
+  {
+    keyword: "salad with avokado",
+    name: "Салат с авокадо",
+    category: "Салат",
+    price: 220,
+    image: "./img/salad/4.webp",
+  },
+  {
+    keyword: "salad-caesar",
+    name: "Цезарь",
+    category: "Салат",
+    price: 250,
+    image: "./img/salad/31.webp",
+  },
+
+  // --- НАПИТКИ ---
+  {
+    keyword: "orange",
+    name: "Апельсиновый сок",
+    category: "Напиток",
+    price: 90,
+    image: "./img/drink/11.webp",
+  },
+  {
+    keyword: "kapuchino",
+    name: "Капучино",
+    category: "Напиток",
+    price: 120,
+    image: "./img/drink/7.webp",
+  },
+  {
+    keyword: "espresso",
+    name: "Эспрессо",
+    category: "Напиток",
+    price: 120,
+    image: "./img/drink/6.webp",
+  },
+  {
+    keyword: "limonad",
+    name: "Лимонад",
+    category: "Напиток",
+    price: 80,
+    image: "./img/drink/1.webp",
+  },
+  {
+    keyword: "tea",
+    name: "Чай",
+    category: "Напиток",
+    price: 80,
+    image: "./img/drink/5.webp",
+  },
+  {
+    keyword: "apple",
+    name: "Яблочный сок",
+    category: "Напиток",
+    price: 100,
+    image: "./img/drink/8.webp",
+  },
+];

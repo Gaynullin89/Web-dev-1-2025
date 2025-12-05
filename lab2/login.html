@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Вход
+        </title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="login.css">
+    </head>
+<body>
+    <div class="login-container">
+        <form action="https://httpbin.org/post" method="POST" class="login-form">
+        <!-- Форма авторизации + отправка на указанный в методичке сайт -->
+            <h2>Авторизация</h2>
+            <div class="input-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="checkbox-group">
+            <!-- Класс checkbox-group используется для работы с группой чекбоксов -->
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Запомнить меня</label>
+            </div>
+            <button type="submit">Войти</button>
+            <!-- Кнопка -->>
+        </form>
+    </div>
+</body>
+</html>

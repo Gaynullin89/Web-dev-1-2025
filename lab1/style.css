@@ -1,63 +1,63 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Roboto", sans-serif;
-    height: 100vh;
-    font-size: 1.2rem;
+    display: flex; /* Делает <body> flex-контейнером. Это позволяет удобно располагать элементы.*/
+    flex-direction: column; /* Делает так что все элементы располагаются вертикально (сверху вниз).*/
+    justify-content: space-between; /*Делает так, что первый элемент находится наверху, последний — внизу, и при это между ними остаётся расстояние.*/
+    font-family: "Roboto", sans-serif;/*Это основной шрифт*/
+    height: 100vh;/* высота элемента равна 100% высоты области просмотра, vh - это вьюпорт единица измерения, обеспечивает заполнение всей высоты видимого экрана элементом, независимо от его родительских блоков*/
+    font-size: 1.2rem;/*указание размера шрифта в единицах rem*/
 }
 
-header {
-    height: 30px;
+header {/*шапка*/
+    height: 30px;/*Высота элемента — 30 пикселей*/
     font-size: 1.4rem;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+    flex-direction: row; /* делает так, что ссылки располагаются горизонтально */
+    justify-content: start;/*выравниивание элементов в начале*/
 }
 
-header a {
-    margin: 10px;
-    text-decoration: none;
-    color: black;
+header a {/**/
+    margin: 10px;/*внешнее пространство вокруг элемента, внешний отступ элемента*/
+    text-decoration: none;/*определяет нормальный текст (без декорирования), здесь мы удаляем подчеркивание из ссылок*/
+    color: black;/*задаем цвет текста черный*/
 }
 
-header a:hover {
-    color: tomato;
+header a:hover {/*задает стиль элемента при наведении на него курсора мыши*/
+    color: tomato;/*цвет при наведении на него курсором мыши*/
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: column; /* делает так, что элементы распологаются вертикально*/
+    justify-content: start; /* выравнивает элементы в начале*/
 }
 
 img {
-    max-width: 700px;
-    max-height: 500px;
-    height: auto;
-    width: auto;
+    max-width: 700px;/*картинка не может быть шире 700 пикселей*/
+    max-height: 500px;/*картинка не может быть выше 500 пикселей*/
+    height: auto;/*высота области содержимого устанавливается автоматически, прикол в том, что браузер растягивает область содержимого в вертикальном направлении*/
+    width: auto;/* тоже самое, что и предыдущее только это уже связано с шириной*/
 }
 
 tr {
-    margin: 0px; 
+    margin: 0px; /*отсупы, но 0 пикселей, означает, что убирает внешние отступы между строками*/
 }
 
 th, td {
-    margin: 0px;
-    border-style: solid;
-    border-width: 1px;
-    
-    border-color: grey;
-    padding: 5px;
+    margin: 0px;/*отсупы, но 0 пикселей, означает, что убирает внешние отступы между строками*/
+    border-style: solid;/*означает сплошную линию границы элемента*/
+    border-width: 1px;/*это толщина линии в 1 пиксель*/
+
+    border-color: grey;/*цвет самой рамки в нашем случае серый*/
+    padding: 5px;/*внутренний отступ в 5 пикселей от текста до границы*/
 }
 
 footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.3rem;
-    color: white;
-    height: 100px;
-    background-color: black;
+    flex-direction: column;/**/
+    justify-content: center;/*размещает элементы по центру*/
+    text-align: center;/*выравнивает текст по центру*/
+    font-size: 1.3rem;/*указание размера шрифта в единицах rem*/
+    color: white;/*цвет белый*/
+    height: 100px;/*значение высоты элемента в 100 пикселей*/
+    background-color: black;/*задает цвет фона элемента*/
 }

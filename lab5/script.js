@@ -1,47 +1,47 @@
 const menu = {
     "Супы": [
-        { name: "Томатный суп", price: 350, quantity: "300 мл", image: "img/i (1).webp", kind: "meat" },
-        { name: "Рамен", price: 420, quantity: "400 мл", image: "img/i (2).webp", kind: "fish" },
-        { name: "Том ям", price: 470, quantity: "400 мл", image: "img/i (3).webp", kind: "fish" },
-        { name: "Грибной крем-суп", price: 330, quantity: "300 мл", image: "img/i (6).webp", kind: "veg" },
-        { name: "Свекольный суп", price: 300, quantity: "350 мл", image: "img/i (8).webp", kind: "meat" },
-        { name: "Гаспачо", price: 310, quantity: "300 мл", image: "img/i (7).webp", kind: "veg" }
+        { name: "Томатный суп", price: 350, quantity: "300 мл", image: "img/13.webp", kind: "meat" },
+        { name: "Рамен", price: 420, quantity: "400 мл", image: "img/14.webp", kind: "fish" },
+        { name: "Том ям", price: 470, quantity: "400 мл", image: "img/15.webp", kind: "fish" },
+        { name: "Грибной крем-суп", price: 330, quantity: "300 мл", image: "img/27.webp", kind: "veg" },
+        { name: "Свекольный суп", price: 300, quantity: "350 мл", image: "img/21.webp", kind: "meat" },
+        { name: "Гаспачо", price: 310, quantity: "300 мл", image: "img/25.webp", kind: "veg" }
     ],
 
     "Вторые блюда": [
-        { name: "Плов", price: 380, quantity: "350 г", image: "img/i (4).webp", kind: "meat" },
-        { name: "Пюре с котлетой", price: 340, quantity: "350 г", image: "img/XXL.jpg", kind: "meat" },
-        { name: "Макароны по-флотски", price: 360, quantity: "350 г", image: "img/i (5).webp", kind: "fish" },
-        { name: "Стейк лосося", price: 520, quantity: "250 г", image: "img/i (2).webp", kind: "fish" },
-        { name: "Овощное рагу", price: 300, quantity: "300 г", image: "img/i (6).webp", kind: "veg" },
-        { name: "Запеканка из овощей и киноа", price: 310, quantity: "300 г", image: "img/i (7).webp", kind: "veg" }
+        { name: "Плов", price: 380, quantity: "350 г", image: "img/16.webp", kind: "meat" },
+        { name: "Пюре с котлетой", price: 340, quantity: "350 г", image: "img/30.webp", kind: "meat" },
+        { name: "Макароны по-флотски", price: 360, quantity: "350 г", image: "img/17.webp", kind: "fish" },
+        { name: "Стейк лосося", price: 520, quantity: "250 г", image: "img/12.webp", kind: "fish" },
+        { name: "Овощное рагу", price: 300, quantity: "300 г", image: "img/26.webp", kind: "veg" },
+        { name: "Запеканка из овощей", price: 310, quantity: "300 г", image: "img/28.webp", kind: "veg" }
     ],
 
     "Салаты и стартеры": [
-        { name: "Салат с тунцом", price: 350, quantity: "150 г", image: "img/i (3).webp", kind: "fish" },
-        { name: "Карпаччо из говядины", price: 420, quantity: "120 г", image: "img/i (4).webp", kind: "meat" },
-        { name: "Овощной салат", price: 260, quantity: "150 г", image: "img/i (6).webp", kind: "veg" },
-        { name: "Салат с киноа и авокадо", price: 290, quantity: "150 г", image: "img/i (7).webp", kind: "veg" },
-        { name: "Брускетта с помидорами", price: 240, quantity: "120 г", image: "img/i (8).webp", kind: "veg" },
-        { name: "Греческий салат", price: 270, quantity: "150 г", image: "img/i (1).webp", kind: "veg" }
+        { name: "Салат с тунцом", price: 350, quantity: "150 г", image: "img/24.webp", kind: "fish" },
+        { name: "Греческий салат", price: 420, quantity: "120 г", image: "img/29.webp", kind: "meat" },
+        { name: "Овощной салат", price: 260, quantity: "150 г", image: "img/22.webp", kind: "veg" },
+        { name: "Салат с авокадо", price: 290, quantity: "150 г", image: "img/4.webp", kind: "veg" },
+        { name: "Брускетта с помидорами", price: 240, quantity: "120 г", image: "img/23.webp", kind: "veg" },
+        { name: "Цезарь", price: 270, quantity: "150 г", image: "img/31.webp", kind: "veg" }
     ],
 
     "Десерты": [
-        { name: "Маленький чизкейк", price: 160, quantity: "80 г", image: "img/i (6).webp", kind: "small" },
-        { name: "Маленький эклер", price: 140, quantity: "70 г", image: "img/i (7).webp", kind: "small" },
-        { name: "Маленькая порция мороженого", price: 150, quantity: "80 г", image: "img/i (8).webp", kind: "small" },
-        { name: "Тирамису (среднее)", price: 290, quantity: "150 г", image: "img/i (7).webp", kind: "medium" },
-        { name: "Пахлава (среднее)", price: 270, quantity: "150 г", image: "img/i (8).webp", kind: "medium" },
-        { name: "Большой торт шоколадный", price: 480, quantity: "300 г", image: "img/i (5).webp", kind: "large" }
+        { name: "Медовик", price: 160, quantity: "80 г", image: "img/18.webp", kind: "small" },
+        { name: "Маленький эклер", price: 140, quantity: "70 г", image: "img/2.webp", kind: "small" },
+        { name: "Порция мороженого", price: 150, quantity: "80 г", image: "img/9.webp", kind: "small" },
+        { name: "Тирамису", price: 290, quantity: "150 г", image: "img/19.webp", kind: "medium" },
+        { name: "Похлава", price: 270, quantity: "150 г", image: "img/33.webp", kind: "medium" },
+        { name: "Шоколадный торт", price: 480, quantity: "300 г", image: "img/3.webp", kind: "large" }
     ],
 
     "Напитки": [
-        { name: "Чай", price: 230, quantity: "400 мл", image: "img/15517b7ec5f50d84530dc26e023e0b5e.jpg", kind: "hot" },
-        { name: "Капучино", price: 300, quantity: "400 мл", image: "img/ae75829ab45fb6769e277fbf91d79b8f.jpeg", kind: "hot" },
-        { name: "Эспрессо", price: 200, quantity: "80 мл", image: "img/ae75829ab45fb6769e277fbf91d79b8f.jpeg", kind: "hot" },
-        { name: "Яблочный сок", price: 240, quantity: "400 мл", image: "img/close-up-orange-juice-glass-table_1048944-16132466.jpg", kind: "cold" },
-        { name: "Свежевыжатый апельсиновый", price: 260, quantity: "350 мл", image: "img/close-up-orange-juice-glass-table_1048944-16132466.jpg", kind: "cold" },
-        { name: "Лимонад", price: 220, quantity: "400 мл", image: "img/15517b7ec5f50d84530dc26e023e0b5e.jpg", kind: "cold" }
+        { name: "Чай", price: 230, quantity: "400 мл", image: "img/5.webp", kind: "hot" },
+        { name: "Капучино", price: 300, quantity: "400 мл", image: "img/7.webp", kind: "hot" },
+        { name: "Эспрессо", price: 200, quantity: "80 мл", image: "img/6.webp", kind: "hot" },
+        { name: "Яблочный сок", price: 240, quantity: "400 мл", image: "img/8.webp", kind: "cold" },
+        { name: "Свежевыжатый апельсиновый", price: 260, quantity: "350 мл", image: "img/11.webp", kind: "cold" },
+        { name: "Лимонад", price: 220, quantity: "400 мл", image: "img/1.webp", kind: "cold" }
     ]
 };
 

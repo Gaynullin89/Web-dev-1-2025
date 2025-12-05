@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-image: url('https://avatars.mds.yandex.net/get-altay/15288133/2a0000019721f7c003276bb5a383f0d73442/orig'); background-size: cover; background-repeat: no-repeat; background-position: center;
+
+}
+
+/* Стили для самой формы входа */
+.login-form {
+    background: rgba(255, 255, 255, 0.9); /* Белый фон с 90% непрозрачностью */
+    padding: 40px; /* Большие внутренние отступы */
+    border-radius: 15px; /* Сильно скруглённые углы */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Выразительная тень для эффекта "глубины" */
+    width: 100%; /* Форма будет занимать 100% ширины родителя, но не более max-width */
+    max-width: 400px; /* Ограничиваем максимальную ширину */
+    text-align: center; /* Центрируем текст внутри формы (например, заголовок) */
+}
+
+/* Стили для заголовка формы */
+.login-form h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Стили для группы элементов (метка + поле ввода) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; /* Выравниваем текст в группе по левому краю */
+}
+
+/* Стили для меток полей ввода */
+.input-group label {
+    display: block; /* Метка занимает всю строку */
+    margin-bottom: 8px; /* Отступ снизу */
+    color: #555; /* Тёмно-серый цвет текста */
+    font-weight: 600; /* Жирный шрифт */
+}
+
+/* Стили для полей ввода (логин, пароль) */
+.input-group input {
+    width: 100%; /* Поле занимает всю доступную ширину */
+    padding: 12px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Серая рамка */
+    border-radius: 8px; /* Скруглённые углы */
+    box-sizing: border-box; /* Чтобы padding не увеличивал фактическую ширину элемента */
+}
+
+/* Стили для группы с чекбоксом */
+.checkbox-group {
+    display: flex; /* Выравниваем чекбокс и метку в ряд */
+    align-items: center; /* По вертикальному центру */
+    margin-bottom: 25px;
+}
+
+/* Стили для метки чекбокса */
+.checkbox-group label {
+    margin-left: 10px; /* Отступ от чекбокса */
+    color: #555;
+}
+
+/* Стили для кнопки "Войти" */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7f50; /* Фирменный оранжевый */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; /* Указатель в виде руки */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    
+}
+
+/* Эффект при наведении на кнопку */
+button:hover {
+    background-color: #e56a3a; /* Затемняем кнопку */
+}

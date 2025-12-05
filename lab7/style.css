@@ -1,287 +1,127 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Roboto", sans-serif;
-    min-height: 100vh;
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0 20px;
-    background: #fafafa;
+  font-family: sans-serif;
+  background-image: url("https://sun9-51.userapi.com/impg/3feJrELIWnHj3_5s1HXvm4H69OnqCeFRC7GasQ/Gc3x-Yml8zI.jpg?size=1200x673&quality=95&sign=895291242190db622f0c1283a3517301&type=album"); background-size: cover; background-repeat: no-repeat; background-position: center;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color:white;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color:white;
 }
 
-header {
-    height: 40px;
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+#nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#nav button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: red;
+  cursor: pointer;
+}
+#nav button.active {
+  background: green;
+  color: white;
 }
 
-header a {
-    margin: 10px;
-    text-decoration: none;
-    color: black;
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-header a:hover {
-    color: tomato;
+.menu-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.menu-section.hidden {
+  display: none;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 30px;
-    padding-bottom: 30px;
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 780px;
+  justify-content: center;
 }
 
-/* контейнеры секций */
-.dishes_section {
-    border-radius: 12px;
-    padding: 10px;
-    background: white;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+.card {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 500px;
+  background: white;
+  border-radius: 16px;
+  padding-bottom: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px white (0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
-/* фильтры */
-.filters {
-    display: flex;
-    gap: 8px;
-    margin: 10px 0 20px;
-    flex-wrap: wrap;
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
 }
 
-.filter-btn {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 0.95rem;
+.card h3 {
+  font-size: 16px;
+  margin: 10px 8px 6px;
 }
 
-.filter-btn:hover {
-    border-color: #bbb;
+button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.filter-btn.active {
-    background: tomato;
-    color: #fff;
-    border-color: tomato;
+#combo {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slot {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px black (0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.slot.selected {
+  outline: 2px solid green;
 }
 
-/* карточки */
-.dishes_category {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 18px;
-    align-content: center;
+#total {
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 600;
 }
-
-.dish_card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 12px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #fff;
-    border-radius: 12px;
-    background: #fff;
-    transition: border-color 0.15s, transform 0.12s;
-    min-height: 420px;
+form {
+  max-width: 420px;
+  margin: 12px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-
-.dish_card:hover {
-    border-color: tomato;
-    transform: translateY(-4px);
-}
-
-.dish_card img {
-    border-radius: 8px;
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.dish_card .middle_part, .dish_card .lower_part {
-    width: 100%;
-    padding: 8px 0;
-    text-align: center;
-}
-
-.dish_price {
-    font-weight: 700;
-    margin: 6px 0;
-}
-
-.dish_name {
-    margin: 4px 0;
-}
-
-.dish_quantity {
-    color: grey;
-    font-size: 1rem;
-    margin-bottom: 8px;
-}
-
-.dish_card button {
-    padding: 10px;
-    width: 100%;
-    border-radius: 8px;
-    border-width: 0;
-    font-size: 1.05rem;
-    background: #4CAF50;
-    color: #fff;
-    cursor: pointer;
-}
-
-.dish_card button:hover {
-    opacity: 0.95;
-}
-
-#lunch_options {
-    border-radius: 12px;
-    padding: 10px;
-    background: white;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-}
-
-.lunch_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.lunch_variant {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-}
-
-.dish_block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.dish_block img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.15s;
-}
-
-.dish_block img:hover {
-    transform: translateY(-4px) scale(1.05);
-}
-
-.dessert_info {
-    font-size: 1rem; /* меньше на ~2px от base 1.2rem */
-    text-align: center;
-    color: grey;
-    margin-top: 10px;
-}
-
-#booking_form form  {
-    display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 30px;
-    align-items: start;
-    margin-top: 20px;
-}
-
-#left-side, #right-side, .left-side, .right-side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-}
-
-.input-item {
-    display: flex;
-    flex-direction: column;
-    margin: 12px 0;
-    width: 100%;
-}
-
-.input-item-row {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin: 12px 0;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.1rem;
-    color: white;
-    height: 60px;
-    background-color: black;
-    margin-top: 30px;
-}
-
-select.highlight {
-    border: 2px solid #4CAF50;
-    background-color: #eaffea;
-    transition: 0.3s;
-}
-
-.notification {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
-    text-align: center;
-    max-width: 400px;
-}
-
-.notification p {
-    margin-bottom: 15px;
-}
-
-.notification button {
-    padding: 8px 16px;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.notification button:hover {
-    background: tomato;
-    color: white;
-}
-
-/* мобильная адаптация */
-@media (max-width: 900px) {
-    #booking_form form {
-        grid-template-columns: 1fr;
-    }
-
-    .lunch_grid {
-        grid-template-columns: 1fr;
-    }
+input {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 8px;
 }
