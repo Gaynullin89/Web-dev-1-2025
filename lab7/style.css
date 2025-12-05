@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-image: url("https://sun9-51.userapi.com/impg/3feJrELIWnHj3_5s1HXvm4H69OnqCeFRC7GasQ/Gc3x-Yml8zI.jpg?size=1200x673&quality=95&sign=895291242190db622f0c1283a3517301&type=album"); background-size: cover; background-repeat: no-repeat; background-position: center;
-  padding: 20px;
+  padding: 0px;
 }
 h1 {
   text-align: center;
@@ -113,6 +113,17 @@ button {
   text-align: center;
   font-weight: 600;
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    height: 100px;
+    background-color: black;
+}
+
 form {
   max-width: 420px;
   margin: 12px auto;
