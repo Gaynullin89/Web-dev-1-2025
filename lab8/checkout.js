@@ -99,7 +99,7 @@ document.getElementById("order-form").addEventListener("submit", async (e) => {
     dessert_id: getDishId("dessert"),
     drink_id: getDishId("drink"),
   };
-
+console.log("Данные заказа:", data);
   try {
     const res = await fetch(`${API_BASE}/orders?api_key=${API_KEY}`, {
       method: "POST",
